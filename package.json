@@ -109,7 +109,7 @@
 		"google-translate-open-api": "^1.3.7",
 		"got": "^11.8.3",
 		"js-md5": "^0.7.3",
-		"qs": "^6.10.1",
-		"vsce": "^2.5.1"
+		"prebuild-install": "^7.0.0",
+		"qs": "^6.10.1"
 	}
 }
