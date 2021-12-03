@@ -1,0 +1,114 @@
+{
+	"name": "exclusive-translation",
+	"displayName": "Exclusive Translation",
+	"description": "A translation plugin for you",
+	"publisher": "chen",
+	"version": "1.0.0",
+	"engines": {
+		"vscode": "^1.62.0"
+	},
+	"keywords": [
+        "Google",
+		"Baidu",
+		"Ali",
+        "Translate",
+        "english",
+        "chinese",
+        "language"
+    ],
+	"repository": "https://github.com/wandou-cc/exclusive-translation",
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"onCommand:exclusive-translation.key"
+	],
+	"main": "./src/extension.js",
+	"icon": "./src/asserts/icon.png",
+	"contributes": {
+		"commands": [
+			{
+				"command": "exclusive-translation.key",
+				"title": "按键翻译"
+			}
+		],
+		"keybindings": {
+			"command": "exclusive-translation.key",
+			"key": "ctrl+shift+t",
+			"mac": "cmd+shift+t"
+		},
+		"configuration": {
+			"title": "Exclusive Translation",
+			"properties": {
+				"exclusive-translation.englishLanguage": {
+					"type": "string",
+					"default": "zh",
+					"markdownDescription": "输入源为英文翻译的语言"
+				},
+				"exclusive-translation.exceptEnglishLanguage": {
+					"type": "string",
+					"default": "en",
+					"markdownDescription": "输入源为中日韩等语言翻译"
+				},
+				"exclusive-translation.source": {
+					"type": "string",
+					"default": "google",
+					"enum": [
+						"google",
+						"baidu",
+						"ali"
+					],
+					"enumDescriptions": [
+						"google翻译接口 无需任何配置参数",
+						"接入于百度翻译开放者平台",
+						"配置属于自己的key"
+					]
+				},
+				"exclusive-translation.baiduAppid": {
+					"type": "string",
+					"default": "",
+					"definitions": "请输入百度翻译的appId"
+				},
+				"exclusive-translation.baiduPassword": {
+					"type": "string",
+					"default": "",
+					"definitions": "请输入百度翻译的密钥"
+				},
+				"exclusive-translation.aliAccessKeyId": {
+					"type": "string",
+					"default": "",
+					"definitions": "请输入阿里翻译的accessKeyId"
+				},
+				"exclusive-translation.aliAccessKeySecret": {
+					"type": "string",
+					"default": "",
+					"definitions": "请输入阿里翻译的aliAccessKeySecret"
+				}
+			}
+		}
+	},
+	"scripts": {
+		"lint": "eslint .",
+		"pretest": "npm run lint",
+		"test": "node ./test/runTest.js"
+	},
+	"devDependencies": {
+		"@types/vscode": "^1.62.0",
+		"@types/glob": "^7.1.4",
+		"@types/mocha": "^9.0.0",
+		"@types/node": "14.x",
+		"eslint": "^8.1.0",
+		"glob": "^7.1.7",
+		"mocha": "^9.1.3",
+		"typescript": "^4.4.4",
+		"@vscode/test-electron": "^1.6.2"
+	},
+	"dependencies": {
+		"@alicloud/pop-core": "^1.7.10",
+		"axios": "^0.24.0",
+		"google-translate-open-api": "^1.3.7",
+		"got": "^11.8.3",
+		"js-md5": "^0.7.3",
+		"qs": "^6.10.1"
+	}
+}
