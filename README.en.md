@@ -4,12 +4,12 @@ English Readme /  [简体中文说明](README.md)
 
 1. The default is based on [Google 翻译](https://translate.google.cn)Reverse development，Support multi-language input and output, just use it directly
 2. To support Baidu developer access, you need to configure the appid and key in the configuration items `Baidu Appid` and `Baidu Password`
-![百度配置](./src/asserts/百度配置.png)
-![百度配置](./src/asserts/百度官网.png)
+![百度配置](./asserts/baiduconfig.png)
+![百度配置](./asserts/baiduwebsite.png)
 
 3. To support Ali developer access, you need to configure aid and key in the configuration items `Ali Access Key ID` and `Ali Access Key Secret`
-![阿里巴巴配置](./src/asserts/阿里巴巴配置.png)
-![阿里巴巴配置](./src/asserts/阿里巴巴官网.png)
+![阿里巴巴配置](./asserts/aliconfig.png)
+![阿里巴巴配置](./asserts/aliwebsite.png)
 
 2 and 3 need to be configured, but only you can use it. More stable. Although it is a little troublesome, you can ask me for help.
 1 It does not require any configuration, just use it directly

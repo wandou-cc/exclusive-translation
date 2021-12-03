@@ -24,7 +24,7 @@
 		"onCommand:exclusive-translation.key"
 	],
 	"main": "./src/extension.js",
-	"icon": "./src/asserts/icon.png",
+	"icon": "./asserts/icon.png",
 	"contributes": {
 		"commands": [
 			{
