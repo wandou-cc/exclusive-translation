@@ -4,13 +4,14 @@
 
 1. 默认基于 [Google 翻译](https://translate.google.cn)逆向开发，支持多语言输入 输出,直接使用即可
 2. 支持百度开发者接入需要 在配置项 `Baidu Appid` 以及 `Baidu Password` 中配置 appid 以及 密钥
+[百度翻译官网直达](https://api.fanyi.baidu.com/product/11)
 ![百度配置](./asserts/baiduconfig.png)
 ![百度配置](./asserts/baiduwebsite.png)
 
 3. 支持阿里开发者接入需要 在配置项 `Ali Access Key ID` 以及 `Ali Access Key Secret` 中配置 aid 以及 key
 ![阿里巴巴配置](./asserts/aliconfig.png)
 ![阿里巴巴配置](./asserts/aliwebsite.png)
-
+[ali官网直达](https://www.aliyun.com/product/ai/alimt?spm=5176.21213303.8115314850.4.6bbf3edaYx4bLO&scm=20140722.S_card@@%E5%8D%A1%E7%89%87@@1954._.ID_card@@%E5%8D%A1%E7%89%87@@1954-RL_%E6%9C%BA%E5%99%A8%E7%BF%BB%E8%AF%91-OR_ser-V_2-P0_0)
 2跟3 需要配置 但是 只有你自己能用 更稳定 虽然麻烦了一点 可以找我帮忙
 1 是不需要任何配置的 直接使用就好
 
