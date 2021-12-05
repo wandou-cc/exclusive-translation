@@ -4,10 +4,16 @@ English Readme /  [简体中文说明](README.md)
 
 1. The default is based on [Google 翻译](https://translate.google.cn)Reverse development，Support multi-language input and output, just use it directly
 2. To support Baidu developer access, you need to configure the appid and key in the configuration items `Baidu Appid` and `Baidu Password`
+
+[百度翻译官网直达](https://api.fanyi.baidu.com/product/11)
+
 ![百度配置](./asserts/baiduconfig.png)
 ![百度配置](./asserts/baiduwebsite.png)
 
 3. To support Ali developer access, you need to configure aid and key in the configuration items `Ali Access Key ID` and `Ali Access Key Secret`
+
+[ali官网直达](https://www.aliyun.com/product/ai/alimt?spm=5176.21213303.8115314850.4.6bbf3edaYx4bLO&scm=20140722.S_card@@%E5%8D%A1%E7%89%87@@1954._.ID_card@@%E5%8D%A1%E7%89%87@@1954-RL_%E6%9C%BA%E5%99%A8%E7%BF%BB%E8%AF%91-OR_ser-V_2-P0_0)
+
 ![阿里巴巴配置](./asserts/aliconfig.png)
 ![阿里巴巴配置](./asserts/aliwebsite.png)
 
