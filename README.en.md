@@ -106,6 +106,9 @@ pl|Polish|
 ## 1.0.0
 1. The initial version, you can customize the configuration of the translation language. Default languages such as `Chinese, Japanese, and Korean` are converted to `English` by default; languages such as `English` are converted to `Chinese` by default
 2. Google translation source supports click on `View More` to select other translations, click and copy operation
+## 1.0.1
+1. Increase the automatic replication function Default Close You can turn it on in the settings
+2. Improve the introduction, update instructions
 
 
 # Planning

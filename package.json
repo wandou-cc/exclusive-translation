@@ -2,7 +2,7 @@
 	"name": "exclusive-translation",
 	"displayName": "Exclusive Translation",
 	"description": "A translation plugin for you",
-	"publisher": "chen",
+	"publisher": "chenchao",
 	"version": "1.0.0",
 	"engines": {
 		"vscode": "^1.62.0"
@@ -62,6 +62,18 @@
 						"google翻译接口 无需任何配置参数",
 						"接入于百度翻译开放者平台",
 						"配置属于自己的key"
+					]
+				},
+				"exclusive-translation.isAutoCopy": {
+					"type": "string",
+					"default": "否",
+					"enum": [
+						"是",
+						"否"
+					],
+					"enumDescriptions": [
+						"开启后翻译将自动保存到剪贴板",
+						"关闭后可以点击'查看更多'进行复制"
 					]
 				},
 				"exclusive-translation.baiduAppid": {
