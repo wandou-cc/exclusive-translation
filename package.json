@@ -1,9 +1,9 @@
 {
 	"name": "exclusive-translation",
 	"displayName": "Exclusive Translation",
-	"description": "A translation plugin for you",
+	"description": "一款简单的安装即用的翻译插件并支持接入三方",
 	"publisher": "chenchao",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"engines": {
 		"vscode": "^1.62.0"
 	},
@@ -24,7 +24,7 @@
 		"onCommand:exclusive-translation.key"
 	],
 	"main": "./src/extension.js",
-	"icon": "./asserts/icon.png",
+	"icon": "icon.png",
 	"contributes": {
 		"commands": [
 			{
