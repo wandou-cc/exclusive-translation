@@ -2,6 +2,8 @@ English Readme /  [简体中文说明](README.md)
 
 # Exclusive Translation
 
+![教程](./asserts/Tutorial.gif)
+
 1. The default is based on [Google 翻译](https://translate.google.cn)Reverse development，Support multi-language input and output, just use it directly
 2. To support Baidu developer access, you need to configure the appid and key in the configuration items `Baidu Appid` and `Baidu Password`
 
@@ -17,15 +19,88 @@ English Readme /  [简体中文说明](README.md)
 ![阿里巴巴配置](./asserts/aliconfig.png)
 ![阿里巴巴配置](./asserts/aliwebsite.png)
 
-2 and 3 need to be configured, but only you can use it. More stable. Although it is a little troublesome, you can ask me for help.
-1 It does not require any configuration, just use it directly
+`Baidu` with the` Ali` need to configure but only you can use more stable, although I can find me to help
+
+`Google`, don't need any configuration, just select the button is good
 
 # Instructions
-1. Key activation
+1. Select the word after writing
 windows/linux:`ctrl+shift+t`
+
 mac:`cmd+shift+t`
 
-Currently only supports key activation
+# Language Control
+## google
+Abbreviation|Language
+--|:--|
+zh|Chinese
+en|English
+ru|Russian
+fr|French
+de|German
+ko|Korean
+ja|Japanese
+th|Thai
+es|Spanish
+
+## baidu
+### 语言简称对照
+Abbreviation|Language
+--|:--|
+zh|Chinese|
+en|English|
+yue|Cantonese|
+wyw|Classical Chinese|
+jp|Japanese|
+kor|Korean|
+fra|French|
+spa|Spanish|
+th|Thai|
+ara|Arabic|
+ru|Russian|
+pt|Portuguese|
+de|German|
+it|Italian language|
+el|Greek|
+nl|Dutch|
+pl|Polish|
+cht|traditional Chinese|
+vie|Vietnamese|
+
+### Error Code
+error code|meaning|solution
+--|:--|:--|
+52001|Request timed out|Retry|
+52002|system error|Retry|
+52003|Unauthorized user|Check if your appid is correct, or whether the service is opened|
+54000|Required parameter is empty|Check if there is a small parameter|
+54001|Signature error|Please check your signature generation method|
+54003|Access frequency is limited|Please reduce your call frequency|
+54004|Insufficient account balance|Please visit the management console for account recharge|
+54005|Long query request frequent|Please reduce the transmission frequency of long query, then try again|
+58001|Translation language is not supported|Check if the translation language is in the language list|
+58002|Service is currently closed|Please go to the management console to open the service|
+90107|Certification has not passed or not effective|Please visit my certification to view the progress of authentication|
+
+## ali
+Abbreviation|Language
+--|:--|
+zh|Chinese|
+en|English|
+yue|Cantonese|
+ja|Japanese|
+ko|Korean|
+fr|French|
+es|Spanish|
+th|Thai|
+ar|Arabic|
+ru|Russian|
+pt|Portuguese|
+de|German|
+it|Italian language|
+el|Greek|
+nl|Dutch|
+pl|Polish|
 
 # Version
 ## 1.0.0
