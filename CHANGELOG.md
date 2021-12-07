@@ -1,9 +1,6 @@
 # Change Log
 
-All notable changes to the "exclusive-translation" extension will be documented in this file.
-
-Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
-
-## [Unreleased]
-
-- Initial release
+## [1.0.1]
+- 优化体验配置自动复制功能
+## [1.0.0]
+- 初始化项目 满足基本的使用需求 

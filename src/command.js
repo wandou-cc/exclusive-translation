@@ -2,6 +2,7 @@ const vscode = require('vscode');
 const { googleApi }  = require('./api/google')
 const { baiduApi } = require('./api/baidu')
 const { aliApi } = require('./api/ali')
+const { wangyiApi } = require("./api/wangyi")
 const { getSelectText,isChinese } = require('./utils/utils')
 const maxName = 10;
 // 创建bar
@@ -54,24 +55,28 @@ let keyTranslate = vscode.commands.registerCommand('exclusive-translation.key',a
     if(isChinese(keyWord)) {
         englishLanguage = exceptEnglishLanguage
     }
+
     bar.text = `$(rocket) 请稍后...`
+    let result = '';
     if(source === 'google') {
-      googleApi(keyWord, englishLanguage).then((res)=>{
-        show(res)
-      })
+     result = await googleApi(keyWord, englishLanguage)
     } else if(source === 'baidu'){
-        baiduApi(keyWord, englishLanguage).then((res)=>{
-            show(res)
-        }).catch(()=>{
-            bar.text = '百度翻译失败请重试'
-        })
+        result = await baiduApi(keyWord, englishLanguage)
     }else if(source === 'ali') {
-        aliApi(keyWord, englishLanguage).then((res)=>{
-            show(res)
-        }).catch(()=>{
-            vscode.window.showErrorMessage('accessKeyId/accessKeySecret错误')
-            bar.text = 'accessKeyId/accessKeySecret错误'
-        })
+        result = await aliApi(keyWord, englishLanguage)
+    } else if(source === 'wangyi') {
+        result = await wangyiApi(keyWord, englishLanguage)
+    }
+
+    if(!Array.isArray(result)) {
+        vscode.window.showErrorMessage(`error_code:${result.error_code}`, '去提Issues').then(result => {
+            if (result === '去提Issues') {
+                vscode.env.openExternal(vscode.Uri.parse(`https://github.com/wandou-cc/exclusive-translation/issues`))
+            }
+        });
+        bar.text = `error:${result.error_code}`
+    } else {
+        show(result)
     }
 });
 

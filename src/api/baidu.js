@@ -35,16 +35,10 @@ async function baiduApi(text, to) {
     };
     let res = await sendRequire('post', baseUrl, params, headers)
     if(res.error_code) {
-        vscode.window.showErrorMessage(`error_code:${res.error_code}`, '查看错误原因').then(result => {
-            if (result === '查看错误原因') {
-                vscode.env.openExternal(vscode.Uri.parse(`http://api.fanyi.baidu.com/doc/21`))
-            }
-        });
-        return
+        return {error_code:res.error_code}
     }
     let s = res.trans_result[0]
     return [s.src,s.dst,[]]
 }
-
 
 module.exports.baiduApi = baiduApi

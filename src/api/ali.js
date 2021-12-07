@@ -24,9 +24,11 @@ async function aliApi(text,to) {
     return client.request('TranslateGeneral', params, requestOption).then((result) => {
         if(result.Code === '200') {
             return [text,result.Data.Translated,[]]
+        }else {
+            return {error_code:'accessKeyId/accessKeySecret错误'}
         }
     }, (ex) => {
-        return
+        return {error_code:'accessKeyId/accessKeySecret错误'}
     })
 }
 

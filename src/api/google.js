@@ -23,6 +23,8 @@ function decrypt(keyword,englishLanguage) {
     }).then((WIZ_global_data)=>{
        return googleTranslate(WIZ_global_data,keyword,englishLanguage).then(res=>{
             return res
+        }).catch(() => {
+            return { error_code:'400' }
         })
     })
 }
@@ -63,6 +65,8 @@ function googleTranslate(WIZ_global_data,keyword,englishLanguage){
                                         [0]:结果
                 [4]:源翻译内容
         */
+    }).catch(() => {
+        return { error_code:'400' }
     })
 }
 
