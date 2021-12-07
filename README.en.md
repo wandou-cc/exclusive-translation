@@ -5,14 +5,17 @@ English Readme /  [简体中文说明](README.md)
 ![教程](./asserts/Tutorial.gif)
 
 1. The default is based on [Google 翻译](https://translate.google.cn)Reverse development，Support multi-language input and output, just use it directly
-2. To support Baidu developer access, you need to configure the appid and key in the configuration items `Baidu Appid` and `Baidu Password`
+
+2. Based on the netease youdao to reverse-engineer [netease youdao] (https://fanyi.youdao.com/) without configuration Can be used directly
+
+3. To support Baidu developer access, you need to configure the appid and key in the configuration items `Baidu Appid` and `Baidu Password`
 
 [百度翻译官网直达](https://api.fanyi.baidu.com/product/11)
 
 ![百度配置](./asserts/baiduconfig.png)
 ![百度配置](./asserts/baiduwebsite.png)
 
-3. To support Ali developer access, you need to configure aid and key in the configuration items `Ali Access Key ID` and `Ali Access Key Secret`
+4. To support Ali developer access, you need to configure aid and key in the configuration items `Ali Access Key ID` and `Ali Access Key Secret`
 
 [ali官网直达](https://www.aliyun.com/product/ai/alimt?spm=5176.21213303.8115314850.4.6bbf3edaYx4bLO&scm=20140722.S_card@@%E5%8D%A1%E7%89%87@@1954._.ID_card@@%E5%8D%A1%E7%89%87@@1954-RL_%E6%9C%BA%E5%99%A8%E7%BF%BB%E8%AF%91-OR_ser-V_2-P0_0)
 
@@ -21,13 +24,14 @@ English Readme /  [简体中文说明](README.md)
 
 `Baidu` with the` Ali` need to configure but only you can use more stable, although I can find me to help
 
-`Google`, don't need any configuration, just select the button is good
+`Google` and `netease youdao`, don't need any configuration, just select the button is good
 
 # Instructions
-1. Select the word after writing
-windows/linux:`ctrl+shift+t`
+Select the word after writing
 
-mac:`cmd+shift+t`
+- windows/linux:`ctrl+shift+t`
+
+- mac:`cmd+shift+t`
 
 # Language Control
 ## google
@@ -43,6 +47,20 @@ ja|Japanese
 th|Thai
 es|Spanish
 
+## wangyi
+Language|Abbreviation
+--|:--|
+Chinese|zh-CHS
+English|en
+Japanese|ja
+Korean|ko
+French|fr
+Spanish|es
+Portuguese|pt
+Italian|it
+ru|ru
+Vietnamese|vi
+erman |de
 ## baidu
 ### 语言简称对照
 Abbreviation|Language
@@ -110,7 +128,9 @@ pl|Polish|
 1. Increase the automatic replication function Default Close You can turn it on in the settings
 2. Improve the introduction, update instructions
 
-
+## 1.1.0
+1. Added netease Youdao Translation
+2. Optimize code logic
 # Planning
 1. Simplify operation and support floating translation
 2. Join Baidu reverse translation, Jinshan translation reverse, etc.

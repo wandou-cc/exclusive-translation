@@ -5,14 +5,17 @@
 ![教程](./asserts/Tutorial.gif)
 
 1. 默认基于 [Google 翻译](https://translate.google.cn)逆向开发，支持多语言输入 输出,直接使用即可
-2. 支持百度开发者接入需要 在配置项 `Baidu Appid` 以及 `Baidu Password` 中配置 appid 以及 密钥
+
+2. 基于网易有道逆向开发[网易有道](https://fanyi.youdao.com/) 无需配置 直接使用即可
+
+3. 支持百度开发者接入需要 在配置项 `Baidu Appid` 以及 `Baidu Password` 中配置 appid 以及 密钥
 
 [百度翻译官网直达](https://api.fanyi.baidu.com/product/11)
 
 ![百度配置](./asserts/baiduconfig.png)
 ![百度配置](./asserts/baiduwebsite.png)
 
-3. 支持阿里开发者接入需要 在配置项 `Ali Access Key ID` 以及 `Ali Access Key Secret` 中配置 aid 以及 key
+4. 支持阿里开发者接入需要 在配置项 `Ali Access Key ID` 以及 `Ali Access Key Secret` 中配置 aid 以及 key
 
 [ali官网直达](https://www.aliyun.com/product/ai/alimt?spm=5176.21213303.8115314850.4.6bbf3edaYx4bLO&scm=20140722.S_card@@%E5%8D%A1%E7%89%87@@1954._.ID_card@@%E5%8D%A1%E7%89%87@@1954-RL_%E6%9C%BA%E5%99%A8%E7%BF%BB%E8%AF%91-OR_ser-V_2-P0_0)
 
@@ -21,13 +24,15 @@
 
 `百度`跟 `阿里` 需要配置 但是 只有你自己能用 更稳定 虽然麻烦了一点 可以找我帮忙
 
-`google`是不需要任何配置的 直接选中后 按键 就好
+`google`以及`网易`是不需要任何配置的 直接选中后 按键 就好
 
 # Instructions
-1. 选中文字后按键
-windows/linux用户:`ctrl+shift+t`
 
-mac用户:`cmd+shift+t`
+选中文字后按键
+
+- windows/linux用户 : `ctrl+shift+t`
+
+- mac用户 : `cmd+shift+t`
 
 # Language Control
 ## google
@@ -43,6 +48,49 @@ ja|日语
 th|泰语
 es|西班牙语
 
+## wangyi
+Language|Abbreviation
+--|:--|
+中文|zh-CHS
+英文|en
+日文|ja
+韩文|ko
+法文|fr
+西班牙文|es
+葡萄牙文|pt
+意大利文|it
+俄文|ru
+越南文|vi
+德文|de
+阿拉伯文|ar
+印尼文|id
+南非荷兰语|af
+波斯尼亚语|bs
+保加利亚语|bg
+粤语|yue
+加泰隆语|ca
+克罗地亚语|hr
+捷克语|cs
+丹麦语|da
+荷兰语|nl
+爱沙尼亚语|et
+斐济语|fj
+芬兰语|fi
+希腊语|el
+海地克里奥尔语|ht
+希伯来语|he
+印地语|hi
+白苗语|mww
+匈牙利语|hu
+斯瓦希里语|sw
+克林贡语|tlh
+拉脱维亚语|lv
+立陶宛语|lt
+马来语|ms
+马耳他语|mt
+挪威语|no
+波斯语|fa
+波兰语|pl
 ## baidu
 ### 语言简称对照
 简称|语言|
@@ -121,6 +169,9 @@ pl|波兰语|
 1. 增加自动复制功能默认关闭可以在设置中进行开启关闭
 2. 完善简介,更新使用说明
 
+## 1.1.0
+1. 增加网易有道翻译
+2. 优化代码逻辑
 # Planning
 1. 简化操作 并 支持 悬浮 翻译
 2. 加入百度逆向翻译,金山翻译逆向等
