@@ -41,8 +41,6 @@ function googleTranslate(WIZ_global_data,keyword,englishLanguage){
 
         let resultArr = JSON.parse(res.body.slice(6).split(',"generic"')[0].replace(/(^\w*|\s*)/,'') + ']]')[0]
         let result = JSON.parse(resultArr[2])
-        console.log(result)
-
         let value = '',name = '';
         let more = [];
         result[1][0][0][5].forEach(item=>{
