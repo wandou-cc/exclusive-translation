@@ -54,33 +54,30 @@
 					"default": "en",
 					"markdownDescription": "输入源为中日韩等语言翻译"
 				},
-				"exclusive-translation.source": {
+				"exclusive-translation.translationEngine": {
 					"type": "string",
-					"default": "google",
+					"default": "Google",
 					"enum": [
-						"google",
-						"wangyi",
-						"baidu",
-						"ali"
+						"Google",
+						"网易有道",
+						"百度",
+						"阿里巴巴"
 					],
 					"enumDescriptions": [
 						"google翻译接口 无需任何配置参数",
 						"网易有道翻译引擎 无需任何配置参数",
 						"接入于百度翻译开放者平台",
-						"配置属于自己的key"
+						"接入阿里开放平台进行翻译"
 					]
 				},
+				"exclusive-translation.isHump": {
+					"type": "boolean",
+					"markdownDescription": "是否启用驼峰分割翻译;比如`enumDescriptions`将被分割为`enum Descriptions`后翻译"
+				},
 				"exclusive-translation.isAutoCopy": {
-					"type": "string",
-					"default": "否",
-					"enum": [
-						"是",
-						"否"
-					],
-					"enumDescriptions": [
-						"开启后翻译将自动保存到剪贴板",
-						"关闭后可以点击'查看更多'进行复制"
-					]
+					"type": "boolean",
+					"default":false,
+					"markdownDescription":"开启后默认进行复制到剪贴板"
 				},
 				"exclusive-translation.baiduAppid": {
 					"type": "string",

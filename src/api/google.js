@@ -38,8 +38,11 @@ function googleTranslate(WIZ_global_data,keyword,englishLanguage){
         body :'f.req=' + encodeURIComponent(JSON.stringify([[[WIZ_global_data.rpcids, JSON.stringify([[keyword, 'auto', englishLanguage, true], [null]]), null, 'generic']]]))
     }
     return got.post(url,options).then(res => {
+
         let resultArr = JSON.parse(res.body.slice(6).split(',"generic"')[0].replace(/(^\w*|\s*)/,'') + ']]')[0]
         let result = JSON.parse(resultArr[2])
+        console.log(result)
+
         let value = '',name = '';
         let more = [];
         result[1][0][0][5].forEach(item=>{

@@ -6,6 +6,7 @@ Select the word after writing
 
 - mac:`cmd+shift+t`
 
+- Since `Google` and `NetEase translation` engines are done in reverse, there is no way to use them if the government changes the rules. You can give me `Issues` in time.
 # Exclusive Translation
 
 ![教程](./asserts/Tutorial.gif)
@@ -31,6 +32,16 @@ Select the word after writing
 `Baidu` with the` Ali` need to configure but only you can use more stable, although I can find me to help
 
 `Google` and `netease youdao`, don't need any configuration, just select the button is good
+
+# Configuration Item
+- Choice of Translation Engine
+![Translation engine](./asserts/translationengine.png)
+
+- Whether to automatically copy/whether to automatically escape hump
+![Configuration](./asserts/copyhump.png)
+
+- Translation output
+![Translation output](./asserts/language.png)
 
 # Language Control
 ## google
@@ -130,6 +141,10 @@ pl|Polish|
 ## 1.1.0
 1. Added netease Youdao Translation
 2. Optimize code logic
+
+## 1.1.1
+1. Optimization of Configuration Items and Introduction to Optimization
+2. Add hump split translation
 # Planning
 1. Simplify operation and support floating translation
 2. Join Baidu reverse translation, Jinshan translation reverse, etc.

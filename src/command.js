@@ -3,7 +3,7 @@ const { googleApi }  = require('./api/google')
 const { baiduApi } = require('./api/baidu')
 const { aliApi } = require('./api/ali')
 const { wangyiApi } = require("./api/wangyi")
-const { getSelectText,isChinese } = require('./utils/utils')
+const { getSelectText, isChinese, isUpperCase, sortFieldMatch } = require('./utils/utils')
 const maxName = 10;
 // 创建bar
 var bar = vscode.window.createStatusBarItem(vscode.StatusBarAlignment.Left)
@@ -16,8 +16,8 @@ function show (resultArr) {
     let nameSlice = name.length >= maxName ? name.slice(0,maxName) + '...' : name
     let valueSlice = value.length >= maxName ? value.slice(0,maxName) + '...' : value
     let isAutoCopy = vscode.workspace.getConfiguration().get('exclusive-translation.isAutoCopy')
-    isAutoCopy === '是' && vscode.env.clipboard.writeText(value)
-    value = isAutoCopy === '是' ? value + ' (已复制)' : value
+    isAutoCopy && vscode.env.clipboard.writeText(value)
+    value = isAutoCopy ? value + ' (已复制)' : value
     // 等于0 和 等于1 的时候是 没有 还有 本身 的情况
     if(more.length === 0 || more.length === 1) {
         vscode.window.showInformationMessage(`${nameSlice} : ${value}`)
@@ -41,30 +41,34 @@ function show (resultArr) {
 
 let keyTranslate = vscode.commands.registerCommand('exclusive-translation.key',async function () {
     
-    let source = vscode.workspace.getConfiguration().get('exclusive-translation.source');
+    let source = vscode.workspace.getConfiguration().get('exclusive-translation.translationEngine');
     let englishLanguage = vscode.workspace.getConfiguration().get('exclusive-translation.englishLanguage');
     let exceptEnglishLanguage = vscode.workspace.getConfiguration().get('exclusive-translation.exceptEnglishLanguage');
-
+    let hump = vscode.workspace.getConfiguration().get('exclusive-translation.isHump')
     let keyWord = getSelectText();
     if(!keyWord) return
     if(keyWord.length >= 200) {
         vscode.window.showWarningMessage('为确保翻译准确请不要超过200字符') 
         return
     }
-  
+    if(hump) {
+        if(!isUpperCase(keyWord)) {
+            keyWord = sortFieldMatch(keyWord)
+        }
+    }
     if(isChinese(keyWord)) {
         englishLanguage = exceptEnglishLanguage
     }
 
     bar.text = `$(rocket) 请稍后...`
     let result = '';
-    if(source === 'google') {
+    if(source === 'Google') {
      result = await googleApi(keyWord, englishLanguage)
-    } else if(source === 'baidu'){
+    } else if(source === '百度'){
         result = await baiduApi(keyWord, englishLanguage)
-    }else if(source === 'ali') {
+    }else if(source === '阿里巴巴') {
         result = await aliApi(keyWord, englishLanguage)
-    } else if(source === 'wangyi') {
+    } else if(source === '网易有道') {
         result = await wangyiApi(keyWord, englishLanguage)
     }
 

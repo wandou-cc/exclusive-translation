@@ -44,10 +44,31 @@ function converToUrl(requestParams) {
     return params.join('&');
 }
 
+// 是否只包含大写
+function isUpperCase(str) {
+    return str === str.toUpperCase();
+}
+
+// 进行 驼峰 分割
+function sortFieldMatch (field) {
+    const stringArray = field.split('')
+    let newField = field
+    stringArray.forEach(t => {
+      if (/[A-Z]/.test(t)) { 
+        newField = newField.replace(t, ` ${t}`)
+      }
+    })
+    return newField
+}
+
+
+
 module.exports = {
     getSelectText,
     isChinese,
     getBaiduSign,
     extract,
-    converToUrl
+    converToUrl,
+    isUpperCase,
+    sortFieldMatch
 }
