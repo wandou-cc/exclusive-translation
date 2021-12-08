@@ -1,5 +1,14 @@
 简体中文说明  / [English Readme](README.en.md)
 
+
+# Instructions
+
+选中文字后按键
+
+- windows/linux用户 : `ctrl+shift+t`
+
+- mac用户 : `cmd+shift+t`
+
 # Exclusive Translation
 
 ![教程](./asserts/Tutorial.gif)
@@ -25,14 +34,6 @@
 `百度`跟 `阿里` 需要配置 但是 只有你自己能用 更稳定 虽然麻烦了一点 可以找我帮忙
 
 `google`以及`网易`是不需要任何配置的 直接选中后 按键 就好
-
-# Instructions
-
-选中文字后按键
-
-- windows/linux用户 : `ctrl+shift+t`
-
-- mac用户 : `cmd+shift+t`
 
 # Language Control
 ## google

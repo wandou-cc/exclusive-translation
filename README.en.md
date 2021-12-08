@@ -1,4 +1,10 @@
 English Readme /  [简体中文说明](README.md)
+# Instructions
+Select the word after writing
+
+- windows/linux:`ctrl+shift+t`
+
+- mac:`cmd+shift+t`
 
 # Exclusive Translation
 
@@ -25,13 +31,6 @@ English Readme /  [简体中文说明](README.md)
 `Baidu` with the` Ali` need to configure but only you can use more stable, although I can find me to help
 
 `Google` and `netease youdao`, don't need any configuration, just select the button is good
-
-# Instructions
-Select the word after writing
-
-- windows/linux:`ctrl+shift+t`
-
-- mac:`cmd+shift+t`
 
 # Language Control
 ## google
