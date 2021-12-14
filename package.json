@@ -3,7 +3,7 @@
 	"displayName": "Exclusive Translation",
 	"description": "一款简单的安装即用的翻译插件并支持接入三方",
 	"publisher": "chenchao",
-	"version": "1.1.1",
+	"version": "1.2.0",
 	"engines": {
 		"vscode": "^1.62.0"
 	},
@@ -25,22 +25,35 @@
 		"Other"
 	],
 	"activationEvents": [
-		"onCommand:exclusive-translation.key"
+		"onCommand:exclusive-translation.translation",
+		"onCommand:exclusive-translation.replace"
 	],
 	"main": "./src/extension.js",
 	"icon": "icon.png",
 	"contributes": {
 		"commands": [
 			{
-				"command": "exclusive-translation.key",
+				"command": "exclusive-translation.translation",
 				"title": "按键翻译"
+			},
+			{
+				"command": "exclusive-translation.replace",
+				"title": "替换翻译"
 			}
 		],
-		"keybindings": {
-			"command": "exclusive-translation.key",
-			"key": "ctrl+shift+t",
-			"mac": "cmd+shift+t"
-		},
+		"keybindings": [
+			{
+				"command": "exclusive-translation.translation",
+				"key": "ctrl+shift+t",
+				"mac": "cmd+shift+t",
+				"when": "editorHasSelection"
+			},{
+				"command": "exclusive-translation.replace",
+				"key": "ctrl+alt+r",
+				"mac": "ctrl+cmd+r",
+				"when": "editorHasSelection"
+			}
+		],
 		"configuration": {
 			"title": "Exclusive Translation",
 			"properties": {

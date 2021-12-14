@@ -1,12 +1,21 @@
-English Readme /  [简体中文说明](README.md)
-# Instructions
-Select the word after writing
+English Readme /  [简体中文说明](README.md)]
 
+# Instructions
+`Select the word after writing`
+
+## translation
 - windows/linux:`ctrl+shift+t`
 
 - mac:`cmd+shift+t`
 
+## replace
+- windows/linux : `ctrl+alt+r`
+
+- mac : `ctrl+cmd+r`
+
+- If you encounter a shortcut key conflict, go to Settings to configure the shortcut key 
 - Since `Google` and `NetEase translation` engines are done in reverse, there is no way to use them if the government changes the rules. You can give me `Issues` in time.
+
 # Exclusive Translation
 
 ![教程](./asserts/Tutorial.gif)
@@ -145,6 +154,10 @@ pl|Polish|
 ## 1.1.1
 1. Optimization of Configuration Items and Introduction to Optimization
 2. Add hump split translation
+
+## 1.2.0
+1. Add replacement function 
+
 # Planning
 1. Simplify operation and support floating translation
 2. Join Baidu reverse translation, Jinshan translation reverse, etc.

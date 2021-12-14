@@ -8,11 +8,13 @@ const maxName = 10;
 // 创建bar
 var bar = vscode.window.createStatusBarItem(vscode.StatusBarAlignment.Left)
 bar.show();
+let source,englishLanguage,exceptEnglishLanguage,hump,keyWord
 
-function show (resultArr) {
+function show (resultArr,type) {
+    let oldvalue
     let [name,value,more] = resultArr
     name = name.replaceAll('\n','')
-    value = value.replaceAll('\n','')
+    oldvalue = value = value.replaceAll('\n','')
     let nameSlice = name.length >= maxName ? name.slice(0,maxName) + '...' : name
     let valueSlice = value.length >= maxName ? value.slice(0,maxName) + '...' : value
     let isAutoCopy = vscode.workspace.getConfiguration().get('exclusive-translation.isAutoCopy')
@@ -37,15 +39,22 @@ function show (resultArr) {
     }
     bar.text = nameSlice + ' : ' + valueSlice
     bar.tooltip = name + ' : ' + value
+    if(type === 'replace') {
+        let editor = vscode.window.activeTextEditor;
+        editor.selections.forEach((item) => {
+            editor.edit(editBuilder => {
+                editBuilder.replace(item, oldvalue);
+            })
+        })
+    }
 }
 
-let keyTranslate = vscode.commands.registerCommand('exclusive-translation.key',async function () {
-    
-    let source = vscode.workspace.getConfiguration().get('exclusive-translation.translationEngine');
-    let englishLanguage = vscode.workspace.getConfiguration().get('exclusive-translation.englishLanguage');
-    let exceptEnglishLanguage = vscode.workspace.getConfiguration().get('exclusive-translation.exceptEnglishLanguage');
-    let hump = vscode.workspace.getConfiguration().get('exclusive-translation.isHump')
-    let keyWord = getSelectText();
+async function main(type) {
+    source = vscode.workspace.getConfiguration().get('exclusive-translation.translationEngine');
+    englishLanguage = vscode.workspace.getConfiguration().get('exclusive-translation.englishLanguage');
+    exceptEnglishLanguage = vscode.workspace.getConfiguration().get('exclusive-translation.exceptEnglishLanguage');
+    hump = vscode.workspace.getConfiguration().get('exclusive-translation.isHump')
+    keyWord = getSelectText();
     if(!keyWord) return
     if(keyWord.length >= 200) {
         vscode.window.showWarningMessage('为确保翻译准确请不要超过200字符') 
@@ -59,7 +68,6 @@ let keyTranslate = vscode.commands.registerCommand('exclusive-translation.key',a
     if(isChinese(keyWord)) {
         englishLanguage = exceptEnglishLanguage
     }
-
     bar.text = `$(rocket) 请稍后...`
     let result = '';
     if(source === 'Google') {
@@ -80,11 +88,20 @@ let keyTranslate = vscode.commands.registerCommand('exclusive-translation.key',a
         });
         bar.text = `error:${result.error_code}`
     } else {
-        show(result)
+        show(result,type)
     }
+}
+
+let keyTranslate = vscode.commands.registerCommand('exclusive-translation.translation',function () {
+    main('translation')
 });
+
+let replaceTranslate = vscode.commands.registerCommand('exclusive-translation.replace',function () {
+    main('replace')
+})
 
 
 module.exports = {
-    keyTranslate
+    keyTranslate,
+    replaceTranslate
 }
