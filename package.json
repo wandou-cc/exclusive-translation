@@ -3,7 +3,7 @@
 	"displayName": "Exclusive Translation",
 	"description": "一款简单的安装即用的翻译插件并支持接入三方",
 	"publisher": "chenchao",
-	"version": "1.2.0",
+	"version": "1.2.1",
 	"engines": {
 		"vscode": "^1.62.0"
 	},
