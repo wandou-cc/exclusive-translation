@@ -65,9 +65,24 @@ async function main(type) {
             keyWord = sortFieldMatch(keyWord)
         }
     }
+    if(englishLanguage === '') {
+        englishLanguage = 'zh'
+        vscode.window.showWarningMessage('未配置English Language 默认置为zh');
+        let Configure = vscode.workspace.getConfiguration('exclusive-translation');
+        Configure.update('englishLanguage','zh',true);
+    }
+    if(exceptEnglishLanguage === '') {
+        exceptEnglishLanguage = 'en'
+        vscode.window.showWarningMessage('未配置Except English Language 默认置为en');
+        let Configure = vscode.workspace.getConfiguration('exclusive-translation');
+        Configure.update('exceptEnglishLanguage','en',true);
+    }
+
     if(isChinese(keyWord)) {
         englishLanguage = exceptEnglishLanguage
     }
+
+
     bar.text = `$(rocket) 请稍后...`
     let result = '';
     if(source === 'Google') {

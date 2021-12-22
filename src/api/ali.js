@@ -28,7 +28,7 @@ async function aliApi(text,to) {
             return {error_code:'accessKeyId/accessKeySecret错误'}
         }
     }, (ex) => {
-        return {error_code:'accessKeyId/accessKeySecret错误'}
+        return {error_code:ex}
     })
 }
 module.exports.aliApi = aliApi
