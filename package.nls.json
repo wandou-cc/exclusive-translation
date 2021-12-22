@@ -1,0 +1,19 @@
+{
+    "translation.title": "The key to translate ",
+    "replace.title":"Direct replacement ",
+    "englishLanguage.markdownDescription":"The input source is the translated English language ",
+    "exceptEnglishLanguage.markdownDescription":"The input sources are Chinese, Japanese and Korean language translation ",
+    "translationEngineG":"The Google Translate interface does not require any configuration parameters ",
+    "translationEngineW":"NetEase Youdao Translation engine does not require any configuration parameters ",
+    "translationEngineB":"Access to Baidu Translator Open platform ",
+    "translationEngineA":"Access ali open platform for translation ",
+    "isHump":"Whether to enable hump segmentation translation ;For example, `EnumDescriptions` will be divided into `Enum Descriptions` after translation ",
+    "isAutoCopy":"Copy to clipboard by default ",
+    "baiduAppid":"Please enter the APP Id of Baidu Translation ",
+    "baiduPassword":"Please enter the key of Baidu translation ",
+    "aliAccessKeyId":"Please enter the access Key Id translated by Ali ",
+    "aliAccessKeySecret":"Please enter Ali Access Key Secret ",
+    "wangyi":"Netease",
+    "baidu":"Baidu",
+    "alibaba":"Alibaba"
+}

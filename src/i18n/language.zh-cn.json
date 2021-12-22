@@ -1,0 +1,14 @@
+{
+    "copyTip":"已复制",
+    "viewMore":"查看更多",
+    "biggestCharacter ":"为确保翻译准确请不要超过200字符",
+    "configurationZ" :"未配置English Language 默认置为zh",
+    "configurationE" :"未配置Except English Language 默认置为en",
+    "later":"请稍后",
+    "submitBug":"去提Issues",
+    "aliError":"错误",
+    "BError":"出错请重新尝试",
+    "Bconfiguration":"未配置Appid或密钥",
+    "Gnetwork":"请检查网络，如果您启用代理请关闭代理"
+
+}

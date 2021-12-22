@@ -158,6 +158,10 @@ pl|Polish|
 ## 1.2.0
 1. Add replacement function 
 
+## 1.3.0
+1. Add internationalization features 
+2. Adding a default language 
+3. Optimized error messages 
 # Planning
 1. Simplify operation and support floating translation
 2. Join Baidu reverse translation, Jinshan translation reverse, etc.

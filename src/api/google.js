@@ -2,6 +2,8 @@ const got = require('got')
 const { extract,converToUrl } = require('../utils/utils')
 
 let baseUrl = 'https://translate.google.cn/'
+const { getLanguage } = require("./i18n/index")
+const language = getLanguage()
 
 function decrypt(keyword,englishLanguage) {
     return got(baseUrl).then(res => {
@@ -26,6 +28,8 @@ function decrypt(keyword,englishLanguage) {
         }).catch(() => {
             return { error_code:'400' }
         })
+    }).catch(()=>{
+        return {error_code:`${language.Gnetwork}`}
     })
 }
 

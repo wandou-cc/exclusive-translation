@@ -1,0 +1,20 @@
+{
+    "description":"一款简单的安装即用的翻译插件并支持接入三方",
+    "translation.title": "按键翻译",
+    "replace.title":"直接替换",
+    "englishLanguage.markdownDescription":"输入源为英文翻译的语言",
+    "exceptEnglishLanguage.markdownDescription":"输入源为中日韩等语言翻译",
+    "translationEngineG":"google翻译接口 无需任何配置参数",
+    "translationEngineW":"网易有道翻译引擎 无需任何配置参数",
+    "translationEngineB":"接入于百度翻译开放者平台",
+    "translationEngineA":"接入阿里开放平台进行翻译",
+    "isHump":"是否启用驼峰分割翻译;比如`enumDescriptions`将被分割为`enum Descriptions`后翻译",
+    "isAutoCopy":"开启后默认进行复制到剪贴板",
+    "baiduAppid":"请输入百度翻译的appId",
+    "baiduPassword":"请输入百度翻译的密钥",
+    "aliAccessKeyId":"请输入阿里翻译的accessKeyId",
+    "aliAccessKeySecret":"请输入阿里翻译的aliAccessKeySecret",
+    "wangyi":"网易有道",
+    "baidu":"百度",
+    "alibaba":"阿里巴巴"
+}

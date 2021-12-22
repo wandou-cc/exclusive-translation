@@ -3,7 +3,7 @@
 	"displayName": "Exclusive Translation",
 	"description": "一款简单的安装即用的翻译插件并支持接入三方",
 	"publisher": "chenchao",
-	"version": "1.2.1",
+	"version": "1.3.0",
 	"engines": {
 		"vscode": "^1.62.0"
 	},
@@ -34,11 +34,11 @@
 		"commands": [
 			{
 				"command": "exclusive-translation.translation",
-				"title": "按键翻译"
+				"title": "%translation.title%"
 			},
 			{
 				"command": "exclusive-translation.replace",
-				"title": "替换翻译"
+				"title": "%replace.title%"
 			}
 		],
 		"keybindings": [
@@ -47,7 +47,8 @@
 				"key": "ctrl+shift+t",
 				"mac": "cmd+shift+t",
 				"when": "editorHasSelection"
-			},{
+			},
+			{
 				"command": "exclusive-translation.replace",
 				"key": "ctrl+alt+r",
 				"mac": "ctrl+cmd+r",
@@ -60,57 +61,57 @@
 				"exclusive-translation.englishLanguage": {
 					"type": "string",
 					"default": "zh",
-					"markdownDescription": "输入源为英文翻译的语言"
+					"markdownDescription": "%englishLanguage.markdownDescription%"
 				},
 				"exclusive-translation.exceptEnglishLanguage": {
 					"type": "string",
 					"default": "en",
-					"markdownDescription": "输入源为中日韩等语言翻译"
+					"markdownDescription": "%exceptEnglishLanguage.markdownDescription%"
 				},
 				"exclusive-translation.translationEngine": {
 					"type": "string",
 					"default": "Google",
 					"enum": [
 						"Google",
-						"网易有道",
-						"百度",
-						"阿里巴巴"
+						"%wangyi%",
+						"%baidu%",
+						"%alibaba%"
 					],
 					"enumDescriptions": [
-						"google翻译接口 无需任何配置参数",
-						"网易有道翻译引擎 无需任何配置参数",
-						"接入于百度翻译开放者平台",
-						"接入阿里开放平台进行翻译"
+						"%translationEngineG%",
+						"%translationEngineW%",
+						"%translationEngineB%",
+						"%translationEngineA%"
 					]
 				},
 				"exclusive-translation.isHump": {
 					"type": "boolean",
-					"markdownDescription": "是否启用驼峰分割翻译;比如`enumDescriptions`将被分割为`enum Descriptions`后翻译"
+					"markdownDescription": "%isHump%"
 				},
 				"exclusive-translation.isAutoCopy": {
 					"type": "boolean",
-					"default":false,
-					"markdownDescription":"开启后默认进行复制到剪贴板"
+					"default": false,
+					"markdownDescription": "%isAutoCopy%"
 				},
 				"exclusive-translation.baiduAppid": {
 					"type": "string",
 					"default": "",
-					"definitions": "请输入百度翻译的appId"
+					"definitions": "%baiduAppid%"
 				},
 				"exclusive-translation.baiduPassword": {
 					"type": "string",
 					"default": "",
-					"definitions": "请输入百度翻译的密钥"
+					"definitions": "%baiduPassword%"
 				},
 				"exclusive-translation.aliAccessKeyId": {
 					"type": "string",
 					"default": "",
-					"definitions": "请输入阿里翻译的accessKeyId"
+					"definitions": "%aliAccessKeyId%"
 				},
 				"exclusive-translation.aliAccessKeySecret": {
 					"type": "string",
 					"default": "",
-					"definitions": "请输入阿里翻译的aliAccessKeySecret"
+					"definitions": "%aliAccessKeySecret%"
 				}
 			}
 		}
@@ -138,6 +139,6 @@
 		"js-md5": "^0.7.3",
 		"prebuild-install": "^7.0.0",
 		"qs": "^6.10.1",
-		"vsce": "^2.5.1"
+		"vscode-nls": "^5.0.0"
 	}
 }

@@ -1,0 +1,13 @@
+{
+    "copyTip":"replicated",
+    "viewMore":"To view more",
+    "biggestCharacter ":"Please do not exceed 200 characters to ensure accurate translation ",
+    "configurationZ" :"Not configured English Language The default setting for zh",
+    "configurationE" :"Not configured Except English LanguageThe default setting for en",
+    "later":"Please later ",
+    "submitBug":"To mention Issues",
+    "aliError":"error",
+    "BError":"Error please try again ",
+    "Bconfiguration":"No Appid or key is configured ",
+    "Gnetwork":"Check the network and disable the proxy if it is enabled "
+}

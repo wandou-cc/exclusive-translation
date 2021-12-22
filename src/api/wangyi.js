@@ -1,5 +1,4 @@
 // @ts-nocheck
-const vscode = require('vscode');
 const got = require('got');
 const { converToUrl } = require("../utils/utils")
 var n = function (e, t) { return e << t | e >>> 32 - t },

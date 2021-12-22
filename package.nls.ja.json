@@ -1,0 +1,21 @@
+{
+    "description":"翻訳プラグインとサポートアクセスの簡単なインストール",
+    "translation.title": "ボタン翻訳",
+    "replace.title":"直接交換",
+    "englishLanguage.markdownDescription":"英語翻訳のソースを入力してください",
+    "exceptEnglishLanguage.markdownDescription":"中国語と韓国やその他の言語としての情報源を入力してください",
+    "translationEngineG":"google変換インターフェイスでは構成パラメータは必要ありません",
+    "translationEngineW":"NETEASEは構成パラメータなしで設定パラメータを必要としません。",
+    "translationEngineB":"Baidu翻訳オープンプラットフォームへのアクセス",
+    "translationEngineA":"アリ・オープン・プラットフォームにアクセスして翻訳する ",
+    "isHump":"HUMPセグメンテーション翻訳を可能にするかどうか;`enumDescriptions`分割されます`enum Descriptions`翻訳後",
+    "isAutoCopy":"開く後にデフォルトをクリップボードにコピーします",
+    "baiduAppid":"Baiduの翻訳を入力してくださいappId",
+    "baiduPassword":"Baidu翻訳にキーを入力してください",
+    "aliAccessKeyId":"ALIの翻訳を入力してくださいaccessKeyId",
+    "aliAccessKeySecret":"ALIの翻訳を入力してくださいaliAccessKeySecret",
+    "wangyi":"Netease",
+    "baidu":"Baidu",
+    "alibaba":"Alibaba"
+}
+

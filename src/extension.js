@@ -1,4 +1,4 @@
-
+// @ts-nocheck
 let command = require('./command')
 
 function activate(context) {
