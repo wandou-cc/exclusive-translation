@@ -162,6 +162,7 @@ pl|Polish|
 1. Add internationalization features 
 2. Adding a default language 
 3. Optimized error messages 
+
 # Planning
 1. Simplify operation and support floating translation
 2. Join Baidu reverse translation, Jinshan translation reverse, etc.
