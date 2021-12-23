@@ -18,7 +18,9 @@
 		"Translate",
 		"english",
 		"chinese",
-		"language"
+		"language",
+		"번역",
+		"翻訳"
 	],
 	"repository": "https://github.com/wandou-cc/exclusive-translation",
 	"categories": [

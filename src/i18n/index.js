@@ -2,7 +2,7 @@ const vscode = require('vscode');
 
 function  getLanguage() {
     let lang = vscode.env.language;
-    let langLocale 
+    let langLocale;
     try {
         langLocale = require(`./language.${lang}.json`);
     } catch (err){

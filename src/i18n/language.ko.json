@@ -1,0 +1,13 @@
+{
+    "copyTip":"복사됨 ",
+    "viewMore":"더 보기",
+    "biggestCharacter ":"정확한 번역을 위해 200자를 넘지 마십시오 ",
+    "configurationZ" :"설정되지 않음 English Language 기본 설정  zh",
+    "configurationE" :"설정되지 않음 Except English Language 기본 설정 en",
+    "later":"잠시 후 ",
+    "submitBug":"가서 꺼내 Issues",
+    "aliError":"오류 ",
+    "BError":"오류가 발생했다면 다시 시도하십시오 ",
+    "Bconfiguration":"appid나 키가 설정되지 않았습니다 ",
+    "Gnetwork":"네트워크 확인 ，프록시가 활성화되어 있으면 프록시를 닫으십시오 "
+}

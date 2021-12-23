@@ -1,0 +1,13 @@
+{
+    "copyTip":"複製済み ",
+    "viewMore":"もっと見る",
+    "biggestCharacter ":"正確な翻訳を保証するために200文字を超えないでください ",
+    "configurationZ" :"未配置 English Language デフォルト設定 zh",
+    "configurationE" :"未配置Except English Language デフォルト設定 en",
+    "later":"のちほどお願いします ",
+    "submitBug":"行く提 Issues",
+    "aliError":"ミス ",
+    "BError":"ミスはやり直してください ",
+    "Bconfiguration":"未配置 Appidあるいは鍵 ",
+    "Gnetwork":"ネットワークをチェックしてください ，プロキシを有効にする場合はプロキシを閉じてください "
+}

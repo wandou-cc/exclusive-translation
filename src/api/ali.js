@@ -1,6 +1,6 @@
 const Core = require('@alicloud/pop-core');
 const vscode = require('vscode');
-const { getLanguage } = require("./i18n/index")
+const { getLanguage } = require("../i18n/index")
 const language = getLanguage()
 
 async function aliApi(text,to) {

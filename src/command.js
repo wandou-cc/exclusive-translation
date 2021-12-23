@@ -28,8 +28,9 @@ function show (resultArr,type) {
     if(more.length === 0 || more.length === 1) {
         vscode.window.showInformationMessage(`${nameSlice} : ${value}`)
     } else {
+        let viewList = ['查看更多','To view more','もっと見る','더 보기']
         vscode.window.showInformationMessage(`${nameSlice} : ${value}`, `${language.viewMore}`).then(result => {
-            if (result === '查看更多' ||result === 'To view more') {
+            if (viewList.includes(result)) {
                 vscode.window.showQuickPick(more,{
                         ignoreFocusOut: true,
                         matchOnDescription: true,

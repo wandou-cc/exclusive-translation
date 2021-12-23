@@ -3,7 +3,7 @@ const vscode = require('vscode');
 const qs = require('qs');
 const { getBaiduSign } = require('../utils/utils')
 const axios = require('axios')
-const { getLanguage } = require("./i18n/index")
+const { getLanguage } = require("../i18n/index")
 const language = getLanguage()
 
 async function sendRequire(method, url, data, headers) {

@@ -2,7 +2,7 @@ const got = require('got')
 const { extract,converToUrl } = require('../utils/utils')
 
 let baseUrl = 'https://translate.google.cn/'
-const { getLanguage } = require("./i18n/index")
+const { getLanguage } = require("../i18n/index")
 const language = getLanguage()
 
 function decrypt(keyword,englishLanguage) {

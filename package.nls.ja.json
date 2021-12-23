@@ -1,7 +1,7 @@
 {
     "description":"翻訳プラグインとサポートアクセスの簡単なインストール",
     "translation.title": "ボタン翻訳",
-    "replace.title":"直接交換",
+    "replace.title":"直接置き換える ",
     "englishLanguage.markdownDescription":"英語翻訳のソースを入力してください",
     "exceptEnglishLanguage.markdownDescription":"中国語と韓国やその他の言語としての情報源を入力してください",
     "translationEngineG":"google変換インターフェイスでは構成パラメータは必要ありません",
@@ -18,4 +18,3 @@
     "baidu":"Baidu",
     "alibaba":"Alibaba"
 }
-

@@ -1,0 +1,20 @@
+{
+    "description":"설치가 간편하고 바로 사용할 수 있는 번역 플러그인 및 3면 접속 지원 ",
+    "translation.title": "키 번역 ",
+    "replace.title":"직접 바꾸기 ",
+    "englishLanguage.markdownDescription":"입력 소스는 영어로 번역된 언어이다 ",
+    "exceptEnglishLanguage.markdownDescription":"중국어, 일본어, 한국어 등의 언어를 번역한 것이 입력원이다 ",
+    "translationEngineG":"google 번역 인터페이스  설정 매개변수가 필요하지 않습니다 ",
+    "translationEngineW":"왕이유다오 번역엔진  설정 매개변수가 필요하지 않습니다 ",
+    "translationEngineB":"바이두 번역 개방자 플랫폼을 이용할 수 있습니다 ",
+    "translationEngineA":"알리 오픈 플랫폼에 접속하여 번역을하다 ",
+    "isHump":"낙타 분할 번역을 사용할지 여부입니다 ;례를들면 `enumDescriptions`분할될 것입니다 `enum Descriptions`후방 번역 ",
+    "isAutoCopy":"기본적으로 클립보드로 복사합니다 ",
+    "baiduAppid":"바이두에 번역된 것을 입력하세요 appId",
+    "baiduPassword":"바이두 번역 키를 입력하십시오 ",
+    "aliAccessKeyId":"알리 번역을 입력해주세요 accessKeyId",
+    "aliAccessKeySecret":"알리 번역을 입력해주세요 aliAccessKeySecret",
+    "wangyi":"Netease",
+    "baidu":"Baidu",
+    "alibaba":"Alibaba"
+}
